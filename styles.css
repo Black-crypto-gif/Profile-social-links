@@ -1,0 +1,100 @@
+/* RESET CSS */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Import fonts */
+
+@font-face {
+    font-family: 'InterFonts';
+    src: url('./assets/fonts/Inter-VariableFont_slnt\,wght.ttf') format('truetype'); 
+}
+
+
+:root{
+    /* COLOR FONTS */
+
+    --Green : hsl(75, 94%, 57%);
+    --White: hsl(0, 0%, 100%);
+    --Grey700: hsl(0, 0%, 20%);
+    --Grey800: hsl(0, 0%, 12%);
+    --Grey900: hsl(0, 0%, 8%);
+
+    /* FONT WEIGHT */
+
+    --Font700: 700;
+    --Font600: 600;
+    --Font400: 400;
+
+    /* font family */
+
+    --PrimaryFonts : 'InterFonts'
+
+}
+
+body {
+    background-color: var(--Grey900);
+    font-family: var(--PrimaryFonts);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+.container{
+    background-color: var(--Grey800);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    padding: 2rem;
+    border-radius: 0.9rem;
+    max-width: 420px;
+}
+img{
+    width: 95px;
+    border-radius: 50%;
+    margin-bottom: 1.4rem;
+}
+.social-name{
+    color: var(--White);
+    font-weight: var(--Font600);
+    margin-bottom: .5rem;
+}
+
+.social-location{
+    color: var(--Green);
+    font-weight: var(--Font600);
+    margin-bottom: 1.9rem;
+}
+
+.social-profession{
+    color: var(--White);
+    margin-bottom: 1.2rem;
+    font-size: 14px;
+}
+
+.social-links{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0.9rem;
+}
+a{
+    text-decoration: none;
+    color: var(--White);
+    font-weight: var(--Font600);
+    background-color: var(--Grey700);
+    text-align: center;
+    width: 100%;
+    padding: .8rem 6rem;
+    border-radius: 10px;
+}
+
+a:hover{
+    background-color: var(--Green);
+    color: var(--Grey900);
+}
